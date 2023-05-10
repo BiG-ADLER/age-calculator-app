@@ -97,6 +97,7 @@ input[type=number]:focus {
     position: relative;
     margin-left: 734px;
     bottom: -28px;
+    cursor: pointer;
 }
 
 .calculate .button {
@@ -125,5 +126,5 @@ hr {
     margin-top: -23px;
 }
 
-.attribution { font-size: 15px; text-align: center; margin-top: 280px;}
+.attribution { font-size: 15px; text-align: center; margin-top: 280px; opacity: 0.5;}
 .attribution a { color: hsl(264, 100%, 50%); text-decoration: none; font-weight: bolder; font-style: italic; } 
