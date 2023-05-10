@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Overpass:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,700;1,400;1,800&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: hsl(0, 0%, 94%);
+}
+
+.main {
+    width: 50%;
+    height: 65%;
+    background-color: hsl(0, 0%, 100%);
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 269px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+.label {
+    color: hsl(0, 1%, 44%);
+}
+
+.input {
+    margin-top: 80px;
+    margin-left: 80px;
+}
+
+.form input {
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid hsl(0, 0%, 86%);
+}
+
+input[type=number]:focus {
+    outline-color: hsl(259, 100%, 65%);
+    text-decoration-color: black;
+
+}
+
+#year1 {
+    margin-left: 23px;
+}
+
+#month1 {
+    margin-left: 115px;
+}
+
+#day1 {
+    margin-left: 95px;
+}
+
+#year {
+    margin-left: 24px;
+    margin-top: 9px;
+}
+
+#year::placeholder {
+    padding: 24%;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+/* #year:invalid {
+    border: 1px solid red;
+} */
+
+#month {
+    margin-left: 50px;
+}
+
+#month::placeholder {
+    padding: 34%;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+#day {
+    margin-left: 50px;
+}
+
+#day::placeholder {
+    padding: 34%;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.calculate {
+    background-color: hsl(259, 100%, 65%);
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    position: relative;
+    margin-left: 734px;
+    bottom: -28px;
+}
+
+.calculate .button {
+    margin-top: 26px;
+    margin-left: 26px;
+}
+
+.showdate {
+    font-weight: bolder;
+    font-style: italic;
+    width: 700px;
+    height: 200px;
+    font-size: 110px;
+    margin-top: 70px;
+    margin-left: 102px;
+    line-height: 100px;
+}
+
+.showYear, .showMonths, .showDays {
+    color: hsl(259, 100%, 65%);
+}
+
+
+hr {
+    width: 700px;
+    margin-top: -23px;
+}
+
+.attribution { font-size: 15px; text-align: center; margin-top: 280px;}
+.attribution a { color: hsl(264, 100%, 50%); text-decoration: none; font-weight: bolder; font-style: italic; } 

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Age calculator app</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+  <div class="main">
+    <div class="input">
+      <div class="label">
+        <label id="year1" for="year">YEAR</label>
+        <label id="month1" for="month">MONTH</label>
+        <label id="day1" for="day">DAY</label>
+      </div>
+      <div class="form">
+        <form>
+          <input type="number" id="year" name="year" placeholder="YYYY" required autocomplete="off">
+          <input type="number" id="month" name="month" placeholder="MM" required autocomplete="off">
+          <input type="number" id="day" name="day" placeholder="DD" required autocomplete="off">
+        </form>
+      </div>
+    </div>
+
+    <div>
+      <div class="calculate">
+        <a>
+          <svg class="button" xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg>
+        </a>
+      </div>
+      <hr>
+    </div>
+    <div class="showdate">
+      <a class="year"><span class="showYear">--</span> years</a><br>
+      <a class="month"><span class="showMonths">--</span> months</a><br>
+      <a class="days"><span class="showDays">--</span> days</a>
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io/profile/BiG-ADLER" target="_blank">Front-End Mentor</a>. 
+      Coded by <a href="https://github.com/BiG-ADLER/">Arman Mohebrad</a>.
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
