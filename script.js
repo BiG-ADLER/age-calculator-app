@@ -15,6 +15,7 @@ $(document).ready(function() {
         var key = e.which;
         if (key == 13) {
             MouseClick()
+            // myPopup.show()
         }
     });
 });
@@ -63,20 +64,41 @@ function CalculateDate(year, month, day) {
     const CalculateYear = d.getFullYear() - year
     const CalculateMonth = 12 - month
     const CalculateDay = 31 - day
-    if (CalculateYear < 0 ) {
-        return false
-    } else {
-        if (CalculateMonth < 0) {
-            return false
-        } else {
-            if (CalculateDay < 0) {
-                return false
-            } else {
-                $('.showYear').text((CalculateYear - 1))
-                $('.showMonths').text(CalculateMonth)
-                $('.showDays').text(CalculateDay)
-                return true
-            }
-        }
+
+    if ((CalculateYear >= 0) && (CalculateMonth >= 0) && (CalculateDay >= 0)) {
+        $('#showYear').text((CalculateYear - 1))
+        $('#showYear').css({'color': 'hsl(259, 100%, 65%)'})
+        $('#showMonths').text(CalculateMonth)
+        $('#showMonths').css({'color': 'hsl(259, 100%, 65%)'})
+        $('#showDays').text(CalculateDay)
+        $('#showDays').css({'color': 'hsl(259, 100%, 65%)'})
     }
+
+    if (CalculateYear < 0) {
+        $('#showYear').css({'color': 'hsl(0, 100%, 67%)'})
+        ShowPopup('Please Enter Values Correctly', '#fc0303')
+    }
+
+    if (CalculateMonth < 0) {
+        $('#showMonths').css({'color': 'hsl(0, 100%, 67%)'})
+        ShowPopup('Please Enter Values Correctly', '#fc0303')
+    }
+
+    if (CalculateDay < 0) {
+        $('#showDays').css({'color': 'hsl(0, 100%, 67%)'})
+        ShowPopup('Please Enter Values Correctly', '#fc0303')
+    }
+}
+
+// Dynamic Popup Function
+
+function ShowPopup(Text, TextColor) {
+    const p = new Popup({
+        id: "Popup",
+        title: "Error",
+        content: Text,
+        textColor: TextColor
+    });
+
+    p.show()
 }
